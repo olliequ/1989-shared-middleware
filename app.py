@@ -39,8 +39,8 @@ def PUT_addMMG():
     name = request.form["name"]
     url = request.form["url"]
     author = request.form["author"]
-    tileImageCount = int(request.form["tileImageCount"])
     id = secrets.token_hex(20)
+    tileImageCount = int(request.form["tileImageCount"])
 
     mmg_servers[id] = {
         "id": id,
